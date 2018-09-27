@@ -7,13 +7,11 @@ import { AngularFireModule } from 'angularfire2';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { FIREBASE_CONFIG } from './app.firebase.config';
-import { LoginPage } from '../pages/login/login';
+import { FIREBASE_CONFIG } from './app.config';
 
 @NgModule({
   declarations: [
-    MyApp,
-    LoginPage
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -22,8 +20,7 @@ import { LoginPage } from '../pages/login/login';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    LoginPage
+    MyApp
   ],
   providers: [
     StatusBar,
