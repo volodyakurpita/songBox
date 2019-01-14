@@ -1,0 +1,24 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+  </ion-navbar>
+</ion-header>
+
+<ion-grid style="height: 100%">
+  <ion-row justify-content-center align-items-center style="height: 100%">
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Email</ion-label>
+        <ion-input type="email"  name="email" [(ngModel)]="user.email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Password</ion-label>
+        <ion-input type="password"  name="password" [(ngModel)]="user.password" required></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button ion-button block color="light" (click)="register(user)">Register</button>
+      </div>
+    </ion-list>
+  </ion-row>
+</ion-grid>

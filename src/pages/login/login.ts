@@ -4,6 +4,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { User } from '../../app/model/User';
 import { SongsPage } from '../songs/songs';
 import { AlertController } from 'ionic-angular';
+import { RegisterPage } from '../register/register';
 
 @IonicPage()
 @Component({
@@ -35,7 +36,7 @@ export class LoginPage {
   }
 
   registerUser(e) {
-    // this.navCtrl.push(RegisterPage);
+    this.navCtrl.push(RegisterPage);
   }
 
   showAlert(message: string) {
