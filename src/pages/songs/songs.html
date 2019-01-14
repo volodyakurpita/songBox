@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Songs</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="logout()">
+          <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-list-header>
+          All songs
+        </ion-list-header>
+        <a ion-item *ngFor="let song of songs" (click)="openDetail(song)">
+          {{ song.name }}
+        </a>
+      </ion-list>
+</ion-content>

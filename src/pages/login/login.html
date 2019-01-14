@@ -1,0 +1,25 @@
+<ion-grid style="height: 100%">
+  <ion-content>
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <ion-list>
+        <ion-label class="brand-title">Song Box</ion-label>
+
+        <ion-item>
+          <ion-label fixed>Email</ion-label>
+          <ion-input type="email" class="input-label" name="email" [(ngModel)]="user.email" value="dev@songbox.com" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label fixed>Password</ion-label>
+          <ion-input type="password" class="input-label" name="password" [(ngModel)]="user.password" value="dev321" required></ion-input>
+        </ion-item>
+
+        <div>
+          <button ion-button outline icon-only (click)="login(user)">
+            <ion-icon name="log-in"></ion-icon>
+          </button>
+        </div>
+      </ion-list>
+    </ion-row>
+  </ion-content>
+</ion-grid>

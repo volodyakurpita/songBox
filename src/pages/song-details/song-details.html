@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detail</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="close()">
+          <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input [value]="song.name" disabled="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Acords</ion-label>
+      <ion-input [value]="song.acords" disabled="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Author</ion-label>
+      <ion-input [value]="song.author" disabled="true"></ion-input>
+    </ion-item>
+</ion-content>
