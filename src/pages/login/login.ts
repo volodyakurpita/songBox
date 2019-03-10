@@ -41,9 +41,9 @@ export class LoginPage {
 
   showAlert(message: string) {
     const alert = this.alertCtrl.create({
-      title: 'Error',
+      title: 'Помилка',
       subTitle: message,
-      buttons: ['Try again']
+      buttons: ['Спробувати ще']
     });
     alert.present();
   }

@@ -48,6 +48,16 @@ export class SongsPage {
     console.log(song.id);
   }
 
+  getItems(ev) {
+    var val = ev.target.value;
+
+    if (val && val.trim() != '') {
+      this.songs = this.songs.filter((item) => {
+        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
+  }
+
   logout() {
     localStorage.clear();
     this.navCtrl.setRoot("LoginPage");
